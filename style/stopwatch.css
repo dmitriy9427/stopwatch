@@ -1,11 +1,12 @@
 .stopwatch {
   display: block;
-  margin: 30px 5%;
+  margin: 100px 5%;
 }
 .stopwatch .stopwatch__dial {
-  margin: 100px 0 10px;
+  margin: 0 0 10px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  grid-template-rows: 200px;
   gap: 20px;
 }
 .stopwatch .stopwatch__dial .stopwatch__dial-time {
@@ -13,7 +14,6 @@
   justify-content: center;
   align-items: center;
   background-color: aqua;
-  height: 200px;
   font-style: italic;
   font-weight: 500;
   font-size: 30px;
@@ -22,7 +22,7 @@
 }
 .stopwatch .stopwatch__buttons {
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
   gap: 20px;
 }
 .stopwatch .stopwatch__buttons .stopwatch__button {
@@ -32,12 +32,14 @@
   font-style: oblique;
   font-weight: 500;
   font-size: 30px;
+  padding: 5px;
 }
 .stopwatch .stopwatch__block {
-  margin-top: 40px;
+  margin: 40px auto;
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: 400px;
 }
 .stopwatch .stopwatch__block .stopwatch__block-title {
   margin: 0;
@@ -46,7 +48,7 @@
 }
 .stopwatch .stopwatch__block .stopwatch__block-results {
   padding: 10px;
-  width: 400px;
+  width: 100%;
   border: 2px solid rgb(8, 161, 217);
   border-radius: 5px;
   font-size: 25px;
@@ -56,4 +58,20 @@
   justify-items: center;
   grid-template-columns: 1fr;
   row-gap: 10px;
+}
+
+@media screen and (max-width: 520px) {
+  .stopwatch .stopwatch__dial {
+    grid-template-rows: 70px;
+    gap: 5px;
+  }
+  .stopwatch .stopwatch__dial .stopwatch__dial-time {
+    font-size: 25px;
+  }
+  .stopwatch .stopwatch__buttons {
+    gap: 10px;
+  }
+  .stopwatch .stopwatch__buttons .stopwatch__button {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=stopwatch.css.map */

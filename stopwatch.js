@@ -75,14 +75,15 @@ newButton.addEventListener("click", () => {
   clearDataTimer();
 });
 
-stopButton.addEventListener("click", stopTimer);
+stopButton.addEventListener("click", () => stopTimer());
 
 const pauseTimer = () => {
   clearInterval(interval);
 };
 
 startButton.addEventListener("click", () => {
+  clearInterval(interval);
   interval = setInterval(startTime, 10);
 });
 
-pauseButton.addEventListener("click", pauseTimer);
+pauseButton.addEventListener("click", () => pauseTimer());

@@ -1,0 +1,17 @@
+{
+  "name": "stopwatch",
+  "version": "1.0.0",
+  "description": "stopwatch",
+  "main": "stopwatch.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriy9427/stopwatch.git"
+  },
+  "author": "Dmitry Ryabov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitriy9427/stopwatch/issues"
+  },
+  "homepage": "https://github.com/dmitriy9427/stopwatch/stopwatch.html"
+}
