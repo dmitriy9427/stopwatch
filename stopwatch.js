@@ -70,7 +70,7 @@ const startTime = () => {
 newButton.addEventListener("click", () => {
   const results = document.querySelector(".stopwatch__block-results");
   const result = document.createElement("div");
-  result.textContent = `${hour}:${minute}:${second}:${millisecond}`;
+  result.textContent = `Часы:${hour} Минуты: ${minute} Секунды: ${second} Миллисекунды: ${millisecond}`;
   results.append(result);
   clearDataTimer();
 });
