@@ -1,6 +1,6 @@
 .stopwatch {
-  display: block;
-  margin: 100px 5%;
+  width: 90%;
+  margin: 100px auto 0;
 }
 .stopwatch .stopwatch__dial {
   margin: 0 0 10px;
@@ -47,7 +47,7 @@
 }
 .stopwatch .stopwatch__block .stopwatch__block-results {
   padding: 10px;
-  width: 100%;
+  width: 90%;
   border: 2px solid rgb(8, 161, 217);
   border-radius: 5px;
   font-size: 25px;
@@ -59,7 +59,7 @@
   row-gap: 10px;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 530px) {
   .stopwatch .stopwatch__dial {
     grid-template-rows: 70px;
     gap: 5px;
