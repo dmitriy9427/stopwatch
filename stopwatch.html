@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/stopwatch.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <section class="stopwatch">
+      <div class="stopwatch__dial">
+        <div class="stopwatch__dial-time stopwatch__hours">00</div>
+        <div class="stopwatch__dial-time stopwatch__minutes">00</div>
+        <div class="stopwatch__dial-time stopwatch__seconds">00</div>
+        <div class="stopwatch__dial-time stopwatch__milliseconds">00</div>
+      </div>
+      <div class="stopwatch__buttons">
+        <button class="stopwatch__button stopwatch__button_type-start">
+          Старт
+        </button>
+        <button class="stopwatch__button stopwatch__button_type-pause">
+          Пауза
+        </button>
+        <button class="stopwatch__button stopwatch__button_type-stop">
+          Стоп
+        </button>
+        <button class="stopwatch__button stopwatch__button_type-new">
+          Новый
+        </button>
+      </div>
+
+      <div class="stopwatch__block">
+        <h3 class="stopwatch__block-title">Результаты:</h3>
+        <div class="stopwatch__block-results"></div>
+      </div>
+    </section>
+  </body>
+  <script src="./stopwatch.js"></script>
+</html>
